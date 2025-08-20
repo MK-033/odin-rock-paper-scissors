@@ -1,3 +1,4 @@
+//--Getting Computer Choice--
 const getComputerChoice = () => {
   const randomNumber = Math.random();
   let computerMove = '';
@@ -9,4 +10,10 @@ const getComputerChoice = () => {
     computerMove = 'Scissors';
   }
   return computerMove;
+}
+
+//--Getting Player Choice--
+const getHumanChoice = () => {
+  let playerChoice = prompt('Please enter your move', '');
+  return playerChoice;
 }
