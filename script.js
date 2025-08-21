@@ -15,5 +15,5 @@ const getComputerChoice = () => {
 //--Getting Player Choice--
 const getHumanChoice = () => {
   let playerChoice = prompt('Please enter your move', '');
-  return playerChoice;
+  return playerChoice.toLowerCase()[0].toUpperCase() + playerChoice.toLowerCase().slice(1);
 }
